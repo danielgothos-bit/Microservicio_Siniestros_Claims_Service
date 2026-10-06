@@ -1,0 +1,54 @@
+services:
+  - type: web
+    name: claims-service
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: claims-db
+          property: connectionString
+      - key: REDIS_URL
+        fromService:
+          type: keyvalue
+          name: claims-redis
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      # Mismo valor en TODOS los microservicios (autentica la entrega de eventos).
+      - key: INTERNAL_TOKEN
+        sync: false
+      - key: DEBUG
+        value: "0"
+      - key: RUN_WORKER_IN_WEB
+        value: "1"
+      # Los servicios gratis tardan ~1 minuto en despertar.
+      - key: SYNC_TIMEOUT
+        value: "60"
+      # URL pública del microservicio de Pólizas (ej: https://policy-service-xxxx.onrender.com)
+      - key: POLICY_SERVICE_URL
+        sync: false
+      # URL pública del microservicio de Peritaje (ej: https://adjuster-service-xxxx.onrender.com)
+      - key: ADJUSTER_SERVICE_URL
+        sync: false
+      # URL pública del microservicio de Pagos (ej: https://payment-service-xxxx.onrender.com)
+      - key: PAYMENT_SERVICE_URL
+        sync: false
+      # URL pública del microservicio de Notificaciones (ej: https://notification-service-xxxx.onrender.com)
+      - key: NOTIFICATION_SERVICE_URL
+        sync: false
+      # URL pública del microservicio de Analítica (ej: https://analytics-service-xxxx.onrender.com)
+      - key: ANALYTICS_SERVICE_URL
+        sync: false
+
+  - type: keyvalue
+    name: claims-redis
+    plan: free
+    ipAllowList: []
+
+databases:
+  - name: claims-db
+    databaseName: claims_db
+    user: claims_user
+    plan: free
