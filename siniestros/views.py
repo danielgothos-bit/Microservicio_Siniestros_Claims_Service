@@ -2,6 +2,7 @@ import logging
 
 from django.db import transaction
 from django.shortcuts import get_object_or_404
+from prometheus_client import Counter
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -14,6 +15,9 @@ from .serializers import EstadoSerializer, HistorialSerializer, SiniestroSeriali
 from .servicios import TransicionInvalida, cambiar_estado, datos_evento, registrar_historial
 
 logger = logging.getLogger(__name__)
+
+# Métrica de negocio (sección 11.2): siniestros reportados por línea de negocio.
+SINIESTROS_REPORTADOS = Counter("insureflow_claims_reported_total", "Siniestros reportados", ["product_type"])
 
 
 def error(code, message, http_status):
@@ -69,6 +73,7 @@ def siniestros(request):
     with transaction.atomic():
         siniestro = serializer.save(id_asegurado=id_asegurado)
         registrar_historial(siniestro, None, Siniestro.ABIERTO)
+        SINIESTROS_REPORTADOS.labels(cobertura.get("product_type") or "desconocido").inc()
         publicar("claim.opened", datos_evento(
             siniestro,
             product_type=cobertura.get("product_type"),
