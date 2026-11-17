@@ -1,0 +1,583 @@
+[
+{
+  "model": "siniestros.siniestro",
+  "pk": "2baff5aa-9343-41e1-acb2-cc6fb6ff00a9",
+  "fields": {
+    "id_poliza": "adc099d7-c6ff-48fd-a72f-c15d61374784",
+    "id_asegurado": "f981402e-0777-42b1-9aae-d86aa132f2ed",
+    "incident_date": "2026-11-17T14:57:44.551Z",
+    "reported_at": "2026-11-17T16:57:44.592Z",
+    "status": "pagado",
+    "estimated_amount": "3500000.00",
+    "descripcion": "Golpe en parqueadero"
+  }
+},
+{
+  "model": "siniestros.siniestro",
+  "pk": "4a1977af-5bc5-408d-8f8e-272e58f39292",
+  "fields": {
+    "id_poliza": "38d4dbc7-243f-466f-bbe1-a5d866eab3e5",
+    "id_asegurado": "7ba35437-8689-422e-8082-867664cd65be",
+    "incident_date": "2026-10-06T11:53:57.941Z",
+    "reported_at": "2026-10-06T16:53:57.973Z",
+    "status": "pagado",
+    "estimated_amount": "4500000.00",
+    "descripcion": "Choque trasero en la Av. 80"
+  }
+},
+{
+  "model": "siniestros.siniestro",
+  "pk": "4a5360c4-bc2d-4310-8368-3ea0a92be3ab",
+  "fields": {
+    "id_poliza": "bec27b8c-598c-4989-8060-5ac15e14a215",
+    "id_asegurado": "699b755e-1fef-4ab6-96f7-de580bf18cba",
+    "incident_date": "2026-11-17T12:16:42.063Z",
+    "reported_at": "2026-11-17T17:16:42.095Z",
+    "status": "en_peritaje",
+    "estimated_amount": "2800000.00",
+    "descripcion": "Choque leve en el retrovisor y la puerta"
+  }
+},
+{
+  "model": "siniestros.siniestro",
+  "pk": "64c5ebfb-0cf6-466b-a318-9a8e06deab82",
+  "fields": {
+    "id_poliza": "e545ffdc-9cd1-40a9-b0c8-fdbce4cf28d2",
+    "id_asegurado": "47a8895d-881a-41ee-ba2d-7d48b5cbbc6c",
+    "incident_date": "2026-11-17T12:18:27.504Z",
+    "reported_at": "2026-11-17T17:18:27.533Z",
+    "status": "en_peritaje",
+    "estimated_amount": "2800000.00",
+    "descripcion": "Choque leve en el retrovisor y la puerta"
+  }
+},
+{
+  "model": "siniestros.siniestro",
+  "pk": "7f647c80-746c-4cff-9af7-4a994b6729de",
+  "fields": {
+    "id_poliza": "42edbd8c-91b9-4410-9b89-7fb4d6219b08",
+    "id_asegurado": "47a8895d-881a-41ee-ba2d-7d48b5cbbc6c",
+    "incident_date": "2026-11-17T16:18:00Z",
+    "reported_at": "2026-11-17T17:18:46.614Z",
+    "status": "pagado",
+    "estimated_amount": "4200000.00",
+    "descripcion": "Filtración de agua en el techo de la cocina por la lluvia de anoche."
+  }
+},
+{
+  "model": "siniestros.siniestro",
+  "pk": "a64199f0-434f-4a63-ad7b-dd513b4233e7",
+  "fields": {
+    "id_poliza": "5f08372e-b05a-45a4-88e7-2dd2e52da833",
+    "id_asegurado": "699b755e-1fef-4ab6-96f7-de580bf18cba",
+    "incident_date": "2026-11-17T16:16:00Z",
+    "reported_at": "2026-11-17T17:16:58.544Z",
+    "status": "pagado",
+    "estimated_amount": "4200000.00",
+    "descripcion": "Filtración de agua en el techo de la cocina por la lluvia de anoche."
+  }
+},
+{
+  "model": "siniestros.siniestro",
+  "pk": "d5e56d78-cd6f-4242-9c43-96c67c65b85f",
+  "fields": {
+    "id_poliza": "b675317d-5e7d-47ff-aba7-87c43d62be61",
+    "id_asegurado": "61edfb02-7f84-465b-8df1-977b50077f06",
+    "incident_date": "2026-10-13T16:54:23.570Z",
+    "reported_at": "2026-10-13T18:54:23.609Z",
+    "status": "pagado",
+    "estimated_amount": "3500000.00",
+    "descripcion": "Golpe en el parqueadero"
+  }
+},
+{
+  "model": "siniestros.siniestro",
+  "pk": "df64f2b9-88de-41c3-a181-c6f430740f93",
+  "fields": {
+    "id_poliza": "37255788-8e19-4072-a686-6bc117107d5e",
+    "id_asegurado": "53392dff-d46c-4b66-8e48-1e83aa9b4d69",
+    "incident_date": "2026-11-10T17:59:35.071Z",
+    "reported_at": "2026-11-10T19:59:35.116Z",
+    "status": "pagado",
+    "estimated_amount": "3500000.00",
+    "descripcion": "Golpe en parqueadero"
+  }
+},
+{
+  "model": "siniestros.siniestro",
+  "pk": "ece2df0e-cd37-43c1-93d3-d7655bf77eef",
+  "fields": {
+    "id_poliza": "a5ae718c-79c3-4cec-a7b5-4fa5f03a7742",
+    "id_asegurado": "5f547a3c-bd54-4d05-82b6-b55068d0cc58",
+    "incident_date": "2026-11-10T17:56:57.485Z",
+    "reported_at": "2026-11-10T19:56:57.516Z",
+    "status": "pagado",
+    "estimated_amount": "3500000.00",
+    "descripcion": "Golpe en parqueadero"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "000587cf-11d9-4ad4-bc56-032f5bd97d3a",
+  "fields": {
+    "siniestro": "ece2df0e-cd37-43c1-93d3-d7655bf77eef",
+    "previous_status": "abierto",
+    "new_status": "en_peritaje",
+    "changed_by": null,
+    "changed_at": "2026-11-10T19:56:57.948Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "0bcf8087-c458-4308-90b2-c21b603d32d1",
+  "fields": {
+    "siniestro": "a64199f0-434f-4a63-ad7b-dd513b4233e7",
+    "previous_status": "aprobado",
+    "new_status": "pagado",
+    "changed_by": null,
+    "changed_at": "2026-11-17T17:17:19.490Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "1124ed11-3b60-4139-8b32-f469e9ee0acf",
+  "fields": {
+    "siniestro": "df64f2b9-88de-41c3-a181-c6f430740f93",
+    "previous_status": "en_peritaje",
+    "new_status": "aprobado",
+    "changed_by": null,
+    "changed_at": "2026-11-10T20:01:37.859Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "13096941-1ab1-479b-8068-4ab1f567741a",
+  "fields": {
+    "siniestro": "2baff5aa-9343-41e1-acb2-cc6fb6ff00a9",
+    "previous_status": "en_peritaje",
+    "new_status": "aprobado",
+    "changed_by": null,
+    "changed_at": "2026-11-17T16:57:45.168Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "248729cd-71f0-4be5-a9ba-9f5efaf8fe1a",
+  "fields": {
+    "siniestro": "df64f2b9-88de-41c3-a181-c6f430740f93",
+    "previous_status": "aprobado",
+    "new_status": "pagado",
+    "changed_by": null,
+    "changed_at": "2026-11-10T20:01:37.917Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "2f81e384-b9ce-4a2c-8f3c-c552592da423",
+  "fields": {
+    "siniestro": "d5e56d78-cd6f-4242-9c43-96c67c65b85f",
+    "previous_status": null,
+    "new_status": "abierto",
+    "changed_by": null,
+    "changed_at": "2026-10-13T18:54:23.617Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "3ebe0c88-9fca-4040-9cfc-158f3dc6f39c",
+  "fields": {
+    "siniestro": "4a1977af-5bc5-408d-8f8e-272e58f39292",
+    "previous_status": "en_peritaje",
+    "new_status": "aprobado",
+    "changed_by": null,
+    "changed_at": "2026-10-06T16:54:01.279Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "3f397597-6704-44a3-8483-53845092009d",
+  "fields": {
+    "siniestro": "d5e56d78-cd6f-4242-9c43-96c67c65b85f",
+    "previous_status": "aprobado",
+    "new_status": "pagado",
+    "changed_by": null,
+    "changed_at": "2026-10-13T18:54:27.121Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "53ac7464-1a36-4f45-9f72-09a2cb17b613",
+  "fields": {
+    "siniestro": "4a5360c4-bc2d-4310-8368-3ea0a92be3ab",
+    "previous_status": null,
+    "new_status": "abierto",
+    "changed_by": null,
+    "changed_at": "2026-11-17T17:16:42.097Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "5de1a609-1a95-4350-afb1-90009e1da9b6",
+  "fields": {
+    "siniestro": "d5e56d78-cd6f-4242-9c43-96c67c65b85f",
+    "previous_status": "en_peritaje",
+    "new_status": "aprobado",
+    "changed_by": null,
+    "changed_at": "2026-10-13T18:54:27.053Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "6092d758-0df0-4aa3-bfef-1c67cad776af",
+  "fields": {
+    "siniestro": "ece2df0e-cd37-43c1-93d3-d7655bf77eef",
+    "previous_status": "en_peritaje",
+    "new_status": "aprobado",
+    "changed_by": null,
+    "changed_at": "2026-11-10T19:56:58.080Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "68c44c73-15b5-4d51-998e-ac6504b7d75d",
+  "fields": {
+    "siniestro": "a64199f0-434f-4a63-ad7b-dd513b4233e7",
+    "previous_status": null,
+    "new_status": "abierto",
+    "changed_by": null,
+    "changed_at": "2026-11-17T17:16:58.546Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "846b1ff9-b0b4-4019-bb13-9a02f06e042c",
+  "fields": {
+    "siniestro": "64c5ebfb-0cf6-466b-a318-9a8e06deab82",
+    "previous_status": null,
+    "new_status": "abierto",
+    "changed_by": null,
+    "changed_at": "2026-11-17T17:18:27.534Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "85995096-1b36-48a6-ad03-8ad8eacdfc8d",
+  "fields": {
+    "siniestro": "ece2df0e-cd37-43c1-93d3-d7655bf77eef",
+    "previous_status": null,
+    "new_status": "abierto",
+    "changed_by": null,
+    "changed_at": "2026-11-10T19:56:57.522Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "932c3325-0acb-4a1f-bf03-10a49752c248",
+  "fields": {
+    "siniestro": "2baff5aa-9343-41e1-acb2-cc6fb6ff00a9",
+    "previous_status": "abierto",
+    "new_status": "en_peritaje",
+    "changed_by": null,
+    "changed_at": "2026-11-17T16:57:45.080Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "99eaa07e-cadb-4aef-977d-838bd3bb3ac5",
+  "fields": {
+    "siniestro": "4a1977af-5bc5-408d-8f8e-272e58f39292",
+    "previous_status": null,
+    "new_status": "abierto",
+    "changed_by": null,
+    "changed_at": "2026-10-06T16:53:57.976Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "a20af293-2a7e-4523-bfd9-4590ea8bb1e9",
+  "fields": {
+    "siniestro": "df64f2b9-88de-41c3-a181-c6f430740f93",
+    "previous_status": null,
+    "new_status": "abierto",
+    "changed_by": null,
+    "changed_at": "2026-11-10T19:59:35.119Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "ad5e9603-a5b4-4e05-b29a-bbc2ff2fc7b9",
+  "fields": {
+    "siniestro": "4a1977af-5bc5-408d-8f8e-272e58f39292",
+    "previous_status": "abierto",
+    "new_status": "en_peritaje",
+    "changed_by": null,
+    "changed_at": "2026-10-06T16:53:58.288Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "af331845-81a1-4a01-b540-2df99aeb0a1f",
+  "fields": {
+    "siniestro": "4a5360c4-bc2d-4310-8368-3ea0a92be3ab",
+    "previous_status": "abierto",
+    "new_status": "en_peritaje",
+    "changed_by": null,
+    "changed_at": "2026-11-17T17:16:42.185Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "b3c3eff8-29b4-4ac2-b618-b1e862afbe15",
+  "fields": {
+    "siniestro": "7f647c80-746c-4cff-9af7-4a994b6729de",
+    "previous_status": null,
+    "new_status": "abierto",
+    "changed_by": null,
+    "changed_at": "2026-11-17T17:18:46.615Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "b8546a8b-e436-4b4b-95ab-a5488d76b2b9",
+  "fields": {
+    "siniestro": "2baff5aa-9343-41e1-acb2-cc6fb6ff00a9",
+    "previous_status": null,
+    "new_status": "abierto",
+    "changed_by": null,
+    "changed_at": "2026-11-17T16:57:44.597Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "bd0c606b-c0e7-4ae8-b7a0-ba46326ef6f3",
+  "fields": {
+    "siniestro": "7f647c80-746c-4cff-9af7-4a994b6729de",
+    "previous_status": "aprobado",
+    "new_status": "pagado",
+    "changed_by": null,
+    "changed_at": "2026-11-17T17:19:07.635Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "be3e091e-ebe1-427c-9551-f19580f1e409",
+  "fields": {
+    "siniestro": "2baff5aa-9343-41e1-acb2-cc6fb6ff00a9",
+    "previous_status": "aprobado",
+    "new_status": "pagado",
+    "changed_by": null,
+    "changed_at": "2026-11-17T16:57:45.224Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "c30edd10-8191-409e-b1f0-c456409e3682",
+  "fields": {
+    "siniestro": "4a1977af-5bc5-408d-8f8e-272e58f39292",
+    "previous_status": "aprobado",
+    "new_status": "pagado",
+    "changed_by": null,
+    "changed_at": "2026-10-06T16:54:01.326Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "c60d5503-a39f-4dea-9e6e-b2e100bf96e2",
+  "fields": {
+    "siniestro": "ece2df0e-cd37-43c1-93d3-d7655bf77eef",
+    "previous_status": "aprobado",
+    "new_status": "pagado",
+    "changed_by": null,
+    "changed_at": "2026-11-10T19:56:58.144Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "d5f09a50-61b0-4327-98bf-8bcdd757373f",
+  "fields": {
+    "siniestro": "7f647c80-746c-4cff-9af7-4a994b6729de",
+    "previous_status": "abierto",
+    "new_status": "en_peritaje",
+    "changed_by": null,
+    "changed_at": "2026-11-17T17:18:46.664Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "d72bcce6-be30-4090-90e5-98001de18ab2",
+  "fields": {
+    "siniestro": "d5e56d78-cd6f-4242-9c43-96c67c65b85f",
+    "previous_status": "abierto",
+    "new_status": "en_peritaje",
+    "changed_by": null,
+    "changed_at": "2026-10-13T18:54:24.159Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "ddddbdc8-5291-48fd-bf87-ccd0fa52f19f",
+  "fields": {
+    "siniestro": "a64199f0-434f-4a63-ad7b-dd513b4233e7",
+    "previous_status": "en_peritaje",
+    "new_status": "aprobado",
+    "changed_by": null,
+    "changed_at": "2026-11-17T17:17:19.437Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "de5bf1af-106e-4c18-9f8c-33bf67f0fe8a",
+  "fields": {
+    "siniestro": "df64f2b9-88de-41c3-a181-c6f430740f93",
+    "previous_status": "abierto",
+    "new_status": "en_peritaje",
+    "changed_by": null,
+    "changed_at": "2026-11-10T19:59:35.677Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "ea5c48dc-76a3-4186-8030-06a841d97b50",
+  "fields": {
+    "siniestro": "64c5ebfb-0cf6-466b-a318-9a8e06deab82",
+    "previous_status": "abierto",
+    "new_status": "en_peritaje",
+    "changed_by": null,
+    "changed_at": "2026-11-17T17:18:27.572Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "efa4872b-0aea-4264-8740-a7876772d7b4",
+  "fields": {
+    "siniestro": "7f647c80-746c-4cff-9af7-4a994b6729de",
+    "previous_status": "en_peritaje",
+    "new_status": "aprobado",
+    "changed_by": null,
+    "changed_at": "2026-11-17T17:19:07.576Z"
+  }
+},
+{
+  "model": "siniestros.claimstatushistory",
+  "pk": "ff4663c3-edbf-4157-b710-89381954781c",
+  "fields": {
+    "siniestro": "a64199f0-434f-4a63-ad7b-dd513b4233e7",
+    "previous_status": "abierto",
+    "new_status": "en_peritaje",
+    "changed_by": null,
+    "changed_at": "2026-11-17T17:16:58.597Z"
+  }
+},
+{
+  "model": "siniestros.claimdocumentsref",
+  "pk": "04927573-51e1-4d89-a01c-16a49f6476a0",
+  "fields": {
+    "siniestro": "d5e56d78-cd6f-4242-9c43-96c67c65b85f",
+    "id_documento": "c8df56e9-e854-4bb6-ae96-e6bc7fae681f"
+  }
+},
+{
+  "model": "siniestros.claimdocumentsref",
+  "pk": "07f5a967-b464-4238-b2c3-8c28660c8217",
+  "fields": {
+    "siniestro": "ece2df0e-cd37-43c1-93d3-d7655bf77eef",
+    "id_documento": "4f44be64-0901-480e-aa4a-4315c8b3a44f"
+  }
+},
+{
+  "model": "siniestros.claimdocumentsref",
+  "pk": "1d92d60f-37de-439f-bc5b-8a38f5d04aa9",
+  "fields": {
+    "siniestro": "ece2df0e-cd37-43c1-93d3-d7655bf77eef",
+    "id_documento": "45502e75-9833-4889-91ba-958a64c90009"
+  }
+},
+{
+  "model": "siniestros.claimdocumentsref",
+  "pk": "456adc27-4405-44e0-ace6-23d8aeb556d2",
+  "fields": {
+    "siniestro": "4a1977af-5bc5-408d-8f8e-272e58f39292",
+    "id_documento": "f2c08e32-01d2-4bcc-af9c-6f40cce70e2e"
+  }
+},
+{
+  "model": "siniestros.claimdocumentsref",
+  "pk": "4f85291b-b12c-4a5b-8ae5-59bf0de5954c",
+  "fields": {
+    "siniestro": "d5e56d78-cd6f-4242-9c43-96c67c65b85f",
+    "id_documento": "f9bcf87a-e67d-4083-b6a3-0aec929d973d"
+  }
+},
+{
+  "model": "siniestros.claimdocumentsref",
+  "pk": "54f552db-d3b1-4907-bbba-f3a2d628332b",
+  "fields": {
+    "siniestro": "2baff5aa-9343-41e1-acb2-cc6fb6ff00a9",
+    "id_documento": "02a71e70-0e45-45d5-933f-277b0116831f"
+  }
+},
+{
+  "model": "siniestros.claimdocumentsref",
+  "pk": "7a89edbe-ca4a-4d6c-b557-50539878810f",
+  "fields": {
+    "siniestro": "a64199f0-434f-4a63-ad7b-dd513b4233e7",
+    "id_documento": "b62eaf63-bc0b-47f1-aef9-37322e4ee431"
+  }
+},
+{
+  "model": "siniestros.claimdocumentsref",
+  "pk": "ae086f13-6646-4237-b774-3e6a9b296ea4",
+  "fields": {
+    "siniestro": "4a1977af-5bc5-408d-8f8e-272e58f39292",
+    "id_documento": "e23867a2-a1e0-4c27-9857-4c50190b3416"
+  }
+},
+{
+  "model": "siniestros.claimdocumentsref",
+  "pk": "c0326bf4-eb04-4004-9f04-1402906a0a7e",
+  "fields": {
+    "siniestro": "2baff5aa-9343-41e1-acb2-cc6fb6ff00a9",
+    "id_documento": "1b96211e-145f-4ded-ba07-d2816cb36c83"
+  }
+},
+{
+  "model": "siniestros.claimdocumentsref",
+  "pk": "c7240b7f-c6b9-4e36-a293-39ec20c70079",
+  "fields": {
+    "siniestro": "7f647c80-746c-4cff-9af7-4a994b6729de",
+    "id_documento": "a1945ca3-d126-47a3-874f-861456b7c9ef"
+  }
+},
+{
+  "model": "siniestros.claimdocumentsref",
+  "pk": "c7bd412d-7236-428a-8a2c-d886aa9f18e9",
+  "fields": {
+    "siniestro": "a64199f0-434f-4a63-ad7b-dd513b4233e7",
+    "id_documento": "c95d3818-40b5-47a6-8753-bbbf3444f1c8"
+  }
+},
+{
+  "model": "siniestros.claimdocumentsref",
+  "pk": "cae43309-447f-447f-89a6-1e7240143412",
+  "fields": {
+    "siniestro": "df64f2b9-88de-41c3-a181-c6f430740f93",
+    "id_documento": "2c2d26f8-4bb4-45b6-9baf-891328793aca"
+  }
+},
+{
+  "model": "siniestros.claimdocumentsref",
+  "pk": "d2649804-777d-49bd-969f-a7e4330d531f",
+  "fields": {
+    "siniestro": "df64f2b9-88de-41c3-a181-c6f430740f93",
+    "id_documento": "777b90b5-980b-4b59-97d7-807a07569178"
+  }
+},
+{
+  "model": "siniestros.claimdocumentsref",
+  "pk": "fe3d1d99-2d06-4c9f-b3d6-be7394b79872",
+  "fields": {
+    "siniestro": "7f647c80-746c-4cff-9af7-4a994b6729de",
+    "id_documento": "361b56af-17c6-45ae-a996-d3fa2621b21a"
+  }
+}
+]
