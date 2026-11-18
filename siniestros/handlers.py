@@ -2,7 +2,8 @@
 Eventos que consume el microservicio de Siniestros (coreografía del patrón Saga, sección 6.3).
 
 inspection.scheduled -> el siniestro pasa a "en_peritaje"
-inspection.completed -> se evalúa el resultado y se aprueba la indemnización (publica claim.approved)
+inspection.completed -> el informe del perito queda listo; el GESTOR revisa y decide aprobar o rechazar
+                        (PUT /estado publica claim.approved o claim.rejected)
 payment.completed    -> el siniestro pasa a "pagado"
 payment.failed       -> compensación: queda "aprobado, pendiente de pago" (se registra en el historial)
 document.uploaded    -> se guarda la referencia al documento
@@ -37,9 +38,9 @@ def on_inspection_completed(data):
     if siniestro.status == Siniestro.ABIERTO:
         cambiar_estado(siniestro, Siniestro.EN_PERITAJE)
 
-    # Evaluación del resultado del peritaje: si está habilitada la aprobación automática,
-    # se aprueba la indemnización por el monto estimado (paso 10 del diagrama de secuencia).
-    if siniestro.status == Siniestro.EN_PERITAJE and os.getenv("AUTO_APROBAR_TRAS_PERITAJE", "1") == "1":
+    # El perito informa y el gestor decide: el caso queda "en peritaje" con el informe listo hasta que el
+    # gestor lo apruebe (se paga) o lo rechace. AUTO_APROBAR_TRAS_PERITAJE=1 restaura la aprobación automática.
+    if siniestro.status == Siniestro.EN_PERITAJE and os.getenv("AUTO_APROBAR_TRAS_PERITAJE", "0") == "1":
         cambiar_estado(siniestro, Siniestro.APROBADO)
 
 

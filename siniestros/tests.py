@@ -82,7 +82,11 @@ class SiniestrosTests(APITestCase):
         self.evento("inspection.scheduled", {"id_siniestro": id})
         self.assertEqual(self.client.get(f"/api/v1/siniestros/{id}").data["status"], "en_peritaje")
 
+        # El informe del perito NO aprueba solo: el caso espera la decisión del gestor.
         self.evento("inspection.completed", {"id_siniestro": id, "findings": "Daño en bomper"})
+        self.assertEqual(self.client.get(f"/api/v1/siniestros/{id}").data["status"], "en_peritaje")
+
+        self.client.put(f"/api/v1/siniestros/{id}/estado", {"status": "aprobado"}, format="json")
         self.assertEqual(self.client.get(f"/api/v1/siniestros/{id}").data["status"], "aprobado")
         self.assertEqual(publicar_s.call_args[0][0], "claim.approved")
 
@@ -105,3 +109,13 @@ class SiniestrosTests(APITestCase):
     def test_evento_sin_token(self, get_json, publicar_v, publicar_s):
         resp = self.client.post("/api/v1/eventos", {"event": "payment.completed", "data": {}}, format="json")
         self.assertEqual(resp.status_code, 401)
+
+    def test_gestor_rechaza_despues_del_informe_y_no_se_paga(self, get_json, publicar_v, publicar_s):
+        id = self.reportar().data["id_siniestro"]
+        self.evento("inspection.scheduled", {"id_siniestro": id})
+        self.evento("inspection.completed", {"id_siniestro": id, "findings": "No procede: daño preexistente"})
+        resp = self.client.put(f"/api/v1/siniestros/{id}/estado", {"status": "rechazado"}, format="json")
+        self.assertEqual(resp.status_code, 200)
+        self.assertEqual(self.client.get(f"/api/v1/siniestros/{id}").data["status"], "rechazado")
+        self.assertEqual(publicar_s.call_args[0][0], "claim.rejected")
+        self.assertNotIn("claim.approved", [c[0][0] for c in publicar_s.call_args_list])

@@ -1,5 +1,5 @@
 EVIDENCIA DE PRUEBAS · Microservicio_Siniestros_Claims_Service
-Fecha: 2026-11-17 12:46
+Fecha: 2026-11-18 01:09
 Comando: USE_SQLITE=1 CELERY_EAGER=1 coverage run manage.py test -v 2
 
 Pruebas exigidas (Momento 3): tests/test_unitarias.py (2 unitarias con mocks) y tests/test_integracion.py (1 de integración).
@@ -7,6 +7,7 @@ Pruebas exigidas (Momento 3): tests/test_unitarias.py (2 unitarias con mocks) y 
 === Resultado de cada prueba ===
 test_evento_sin_token (siniestros.tests.SiniestrosTests.test_evento_sin_token) ... ok
 test_flujo_completo_por_eventos (siniestros.tests.SiniestrosTests.test_flujo_completo_por_eventos) ... ok
+test_gestor_rechaza_despues_del_informe_y_no_se_paga (siniestros.tests.SiniestrosTests.test_gestor_rechaza_despues_del_informe_y_no_se_paga) ... ok
 test_polizas_caido (siniestros.tests.SiniestrosTests.test_polizas_caido) ... ok
 test_reportar_valida_cobertura_y_publica (siniestros.tests.SiniestrosTests.test_reportar_valida_cobertura_y_publica) ... ok
 test_sin_cobertura (siniestros.tests.SiniestrosTests.test_sin_cobertura) ... ok
@@ -15,7 +16,7 @@ test_reportar_valida_cobertura_guarda_y_consulta_historial (tests.test_integraci
 test_aprobar_publica_claim_approved_con_monto (tests.test_unitarias.AprobacionUnitTests.test_aprobar_publica_claim_approved_con_monto) ... ok
 test_no_permite_transicion_invalida (tests.test_unitarias.SagaUnitTests.test_no_permite_transicion_invalida) ... ok
 
-Ran 10 tests in 0.099s
+Ran 11 tests in 0.124s
 OK
 
 === Reporte de cobertura (coverage.py) ===
@@ -32,10 +33,10 @@ comun\models.py                 8      0   100%
 comun\servicio.py               2      0   100%
 comun\views.py                 42     12    71%   20-27, 45-46, 49-50, 56
 siniestros\apps.py              4      0   100%
-siniestros\handlers.py         48      8    83%   23, 36, 38, 52, 61, 64, 67-68
+siniestros\handlers.py         48      9    81%   24, 37, 39, 44, 53, 62, 65, 68-69
 siniestros\models.py           45      1    98%   66
 siniestros\serializers.py      28      2    93%   31, 36
-siniestros\servicios.py        24      1    96%   48
+siniestros\servicios.py        24      0   100%
 siniestros\urls.py              3      0   100%
 siniestros\views.py            78     12    85%   37-38, 43, 53-56, 68, 70, 101, 113-114
 ---------------------------------------------------------
